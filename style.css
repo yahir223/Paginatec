@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgb(124, 124, 124) 0%,
+    rgb(70, 68, 68) 100%
+  );
+ 
+}
+
+header {
+  background: #e6e6e6;
+  background: rgb(7, 7, 7);
+  background-image: 
+    url("https://cdn-images.motor.es/image/m/1320w/fotos-diccionario/2024/06//carretera_mid6671ab9a626cd.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 250px;
+  color: rgb(21, 21, 21);
+  padding: 0px;
+}
+
+.header-img {
+  width: 100%;
+  max-height: 75px;
+  object-fit: contain;
+}
+
+nav {
+  background: rgb(7, 7, 7);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://soymotero.net/wp-content/uploads/2021/09/8t2a8614-edit_1024x1024_0.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  background-color: #1b1919;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 20px;
+}
+
+aside {
+  background: radial-gradient(
+    circle,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 20%;
+  min-width: 200px;
+  padding: 20px;
+  color: white;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #1b1919;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #4f4e4e;
+}
+
+main {
+  
+  min-width: 500px;
+  max-width: 70%;
+  padding: 0px;
+  margin-left: 80px;
+}
+.alinear-derecha {
+  margin-left: 50px; /* Ajusta el valor según sea necesario */
+}
+
+.formulario {
+  min-width: 10px;
+  float: left;
+  position: relative; /* O absolute, según tu diseño */
+  left: 200px; /* Ajusta el valor según sea necesario */
+}
+footer {
+  background: #333;
+  color: rgb(172, 172, 172);
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center; /* Puedes dejar esto para pantallas pequeñas si lo deseas */
+  }
+
+  main {
+    max-width: 100%;
+  }
+}

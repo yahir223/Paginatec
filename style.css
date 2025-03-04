@@ -18,7 +18,6 @@ body {
 }
 
 header {
-  background: #e6e6e6;
   background: rgb(7, 7, 7);
   background-image: 
     url("https://cdn-images.motor.es/image/m/1320w/fotos-diccionario/2024/06//carretera_mid6671ab9a626cd.jpg");
@@ -29,10 +28,15 @@ header {
   padding: 0px;
 }
 
-.header-img {
-  width: 100%;
-  max-height: 75px;
-  object-fit: contain;
+.texto-con-sombra {
+  font-size: 48px; 
+  color: transparent; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  background: linear-gradient(to right, #ffffff, #7b7b7b);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  font-style: italic;
+  text-align: center; 
 }
 
 nav {
